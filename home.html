@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Students Scholarship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .logo {
+            width: 250px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header li {
+            padding: 0 20px;
+        }
+        header #branding h2 {
+            margin: 0;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('logo.png') no-repeat 0 -400px;
+            text-align: center;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            color: #333333;
+            animation: fadeInDown 2s;
+        }
+        #showcase p {
+            font-size: 20px;
+            color: #333333;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .content-section {
+            padding: 20px;
+            background: #ffffff;
+            color: #333333;
+        }
+        .content-section h2 {
+            color: #35424a;
+            animation: fadeIn 2s;
+        }
+        .important h3, .form header h1, .content-section h2 {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+        input, select, textarea {
+            padding: 10px;
+            font-size: 1em;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #35424a;
+            color: #fff;
+            border: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e8491d;
+        }
+        .important, .form {
+            padding: 20px;
+            background: #ffffff;
+            color: #333333;
+            margin: 20px 0;
+        }
+        .important ul {
+            list-style: none;
+            padding: 0;
+        }
+        .important ul li {
+            margin-bottom: 10px;
+        }
+        .info-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .read-more-content {
+            display: none;
+        }
+        .read-more-toggle {
+            cursor: pointer;
+            color: blue;
+        }
+        @media (max-width: 768px) {
+            header nav {
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+            }
+            header ul {
+                flex-direction: column;
+            }
+            header li {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Company Logo" class="logo">
+    <header>
+        <div id="branding">
+            <h2>Students Scholarship</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#scholarships">Scholarships</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Empowering Future Leaders</h1>
+            <p>Providing scholarships for B.Tech, Dental, Pharmaceutical, Veterinary, and Medical sector students.</p>
+        </div>
+    </section>
+
+    <section class="content-section" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Student Scholarship Private Limited Company, we are dedicated to supporting students in their educational pursuits.
+                Our mission is to empower young minds and provide them with the necessary resources to achieve their academic goals.
+                We believe that education is a powerful tool that can transform lives and communities, creating a brighter future for all.</p>
+            <p>Education is a fundamental right and a cornerstone for building a better future. By providing students with the resources, guidance, 
+                and opportunities they need to succeed, we are investing in the leaders, innovators, and change-makers of tomorrow.</p>
+        </div>
+    </section>
+
+    <section class="content-section" id="scholarships">
+        <div class="container">
+            <h2>Scholarships Eligible Courses</h2>
+            <ul>
+                <li>B.Tech</li>
+                <li>Pharmaceutical</li>
+                <li>Dental</li>
+                <li>Veterinary</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="important">
+        <div class="container">
+            <h3>Important Information</h3>
+            <ul>
+                <li>Scholarship Application Deadline: July 31st, 2024</li>
+                <li>Internship Application Deadline: July 21st, 2024</li>
+                <a href="internship.html">Apply here for summer Internship</a>
+                <li>Contact Us: <a href="mailto:studentscholarshipsinfo@gmail.com">studentscholarshipsinfo@gmail.com</a></li>
+            </ul>
+            <h2>Certificates</h2>
+            <p>As part of our commitment to supporting and recognizing the efforts of our interns, we are pleased to announce that all participants will receive a certificate from our company upon the successful completion of their internship.
+                This certificate will serve as an official testament to the skills and experience gained during your time with us, highlighting the duration and key achievements of your internship.</p>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <h1>Scholarship Application Form</h1>
+            <form id="scholarship-form" action="/submit-scholarship" method="POST">
+                <h2>Personal Information</h2>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <h2>Educational Background</h2>
+                <label for="current_institution">Current Institution</label>
+                <input type="text" id="current_institution" name="current_institution" required>
+
+                <label for="course">Course of Study</label>
+                <input type="text" id="course" name="course" required>
+
+                <label for="year_of_study">Year of Study</label>
+                <select id="year_of_study" name="year_of_study" required>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+
+                <label for="gpa">Current GPA/Percentage</label>
+                <input type="text" id="gpa" name="gpa" required>
+
+                <h2>Contact Information</h2>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <h2>Hiring for summer Internship</h2>
+            <a href="internship.html">Apply here for summer Internship</a>
+            <div class="info-box">
+                <p>At Student Scholarship Private Limited Company, we are committed to nurturing talent and fostering growth among aspiring students. Our mission is to empower young minds by providing educational scholarships and fostering a conducive learning environment.</p>
+                <h2>Information Box</h2>
+                <div class="read-more-content">
+                    <p>Gain Practical Experience: Work alongside industry experts and gain hands-on experience in [specify relevant areas, e.g., marketing, research, operations].
+
+                        Contribute to Meaningful Projects: Collaborate on real projects that impact our mission of supporting educational initiatives and scholarship programs.
+                        
+                        Professional Development: Participate in workshops and training sessions designed to enhance your skills and prepare you for future career opportunities.</p>
+                    <p>Interested candidates are encouraged to submit their applications through [specify application method, e.g., our website/application portal] by [application deadline]. Please include your resume and a brief cover letter outlining your interest in joining our team.
+
+                        Join us this summer to make a difference in education and propel your career forward with Student Scholarship Private Limited Company.</p>
+                </div>
+                <p><span class="read-more-toggle" onclick="toggleReadMore(this)">Read More...</span></p>
+            </div>
+            <script>
+                function toggleReadMore(button) {
+                    var content = button.parentNode.previousElementSibling;
+                    if (content.style.display === "none" || content.style.display === "") {
+                        content.style.display = "block";
+                        button.textContent = "Read Less...";
+                    } else {
+                        content.style.display = "none";
+                        button.textContent = "Read More...";
+                    }
+                }
+
+                document.getElementById('scholarship-form').addEventListener('submit', function(event) {
+                    // Custom form validation logic
+                    var isValid = true;
+
+                    // Example: Ensure phone number has 10 digits
+                    var phone = document.getElementById('phone').value;
+                    if (!/^\d{10}$/.test(phone)) {
+                        alert('Please enter a valid 10-digit phone number.');
+                        isValid = false;
+                    }
+
+                    if (!isValid) {
+                        event.preventDefault();
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <section class="content-section" id="contact">
+        <div class="container">
+            <h3>FAQs</h3>
+            <ul>
+                <li>How to Apply: Read our <a href="application_form.pdf">Application Form</a></li>
+                <li>What is a Scholarship? Read our <a href="scholarship_definition.pdf">Scholarship Definition</a></li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p>For more information, please reach out to us at <a href="mailto:studentscholarshipsinfo@gmail.com">studentscholarshipsinfo@gmail.com</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Student Scholarship Pvt Ltd. &copy; 2024</p>
+    </footer>
+</body>
+</html>
